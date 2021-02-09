@@ -95,7 +95,7 @@ static int nb_Occurance (String s, char c){
 	 				if (s1.charAt(k1)==alphabet[k2])
 	 				{
 	 			
-	 			s1.replace(s1.charAt(k1), alphabet[((k2-decalage)%25)]);
+	 			s1.replace(s1.charAt(k1), alphabet[((k2-decalage)%26)]);
 	 			k2=26;
 	 			
 	 		        }
