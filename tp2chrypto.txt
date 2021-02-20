@@ -38,21 +38,24 @@ public class TPcrypto {
        double i;
        double count=0;
        String Y="03b1663dda6549a0939ffdd712a852e0d4234e6b";
+       int val=rand.nextInt();
        
       for (i=0;;i++)
       {
           count=i; 
       
-         int comp=sha1(id+rand.nextInt()).compareTo(Y);
+         int comp=sha1(id+val).compareTo(Y);
+         
          if (comp<=0)
          {
           break;
          }
+         val=rand.nextInt();
       }
-        System.out.println("le resultat de SH1 (id||x):");
+        System.out.println("le resultat de SHA1 (id||x):");
         System.out.println(sha1(id+rand.nextInt()));
         System.out.println(" X est egal à:");
-        System.out.println(rand.nextInt());
+        System.out.println(val);
         System.out.println("le nombre d'iteration pour trouver le X est egal à");
         System.out.println(count);
     }
