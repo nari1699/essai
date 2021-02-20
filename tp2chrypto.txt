@@ -53,7 +53,7 @@ public class TPcrypto {
          val=rand.nextInt();
       }
         System.out.println("le resultat de SHA1 (id||x):");
-        System.out.println(sha1(id+rand.nextInt()));
+        System.out.println(sha1(id+val));
         System.out.println(" X est egal à:");
         System.out.println(val);
         System.out.println("le nombre d'iteration pour trouver le X est egal à");
